@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Training Task</title>
+        <link rel="stylesheet" href="./Styles/style.css" />
+    </head>
+    <body>
+        <div class="App">
+            <div class="containerApp">
+                <div class="addProducts">
+                    <input
+                        class="input"
+                        type="text"
+                        maxlength="20"
+                        id="productName"
+                        placeholder="Məhsul Adı"
+                        required
+                    />
+                    <input
+                        class="input"
+                        type="number"
+                        id="productPrice"
+                        placeholder="Məhsul Qiyməti"
+                        required
+                    />
+                    <button id="addProductToList" class="button success">
+                        Əlavə Et
+                    </button>
+                </div>
+                <div class="conclusion">
+                    <div class="productsList" id="productsList"></div>
+                    <div class="totalPriceAndCount">
+                        <p>
+                            Məhsulların Sayı:
+                            <span id="totalCount">0</span> Məhsul
+                        </p>
+                        <p>
+                            Məhsulların Cəmi Qiyməti:
+                            <span id="totalPrice">0</span> AZN
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./Script/dinamic.js"></script>
+    </body>
+</html>
